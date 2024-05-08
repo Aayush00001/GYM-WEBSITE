@@ -1,0 +1,1211 @@
+/* ---------------------------------------adminlogin css------------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+    text-decoration: none;
+}
+div.container{
+    background-color: #f2f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 250px;
+}
+div.login-form{
+    
+    width: 450px;
+    background-color: white;
+    box-shadow: 0px 5px 10px black;
+}
+
+div.login-form h2{
+    text-align: center;
+    background-color: #204969;
+    padding: 12px 0px;
+    color: white;
+}
+div.login-form form{
+    padding: 30px 60px;
+}
+div.login-form form div.input-field{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px;
+}
+div.login-form form div.input-field i{
+    color: darkslategray;
+    padding: 10px 14px;
+    background-color: #f2f4f6;
+    margin-right: 4px;
+}
+div.login-form form div.input-field input{
+    background-color: #f2f4f6;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    padding-left: 15px;
+}
+div.login-form form button{
+    width: 100%;
+    background-color: #5bd1d7;
+    padding: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 15px 0;
+    transition: background-color 0.4s;
+}
+div.login-form form button:hover{
+    background-color: #41b6e6;
+}
+div.login-form form div.extra{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+div.login-form form div.extra a:first-child{
+    color: darkgrey;
+}
+div.login-form form div.extra a:last-child{
+    color: grey;
+}
+
+/* ---------------------------------------header css------------------------------------*/
+/* navbar-style.css */
+.custom-navbar {
+    background-color: #3B3131;
+    padding: 10px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .custom-home-btn, .custom-logout-btn {
+    background-color: #584e46;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    margin-right: 10px;
+  }
+  .custom-home-btn:hover, .custom-logout-btn:hover {
+    background-color: #452e2a;
+  }
+
+/* ---------------------------------------sidebar css------------------------------------*/
+/* custom-sidebar-style.css */
+/* sidebar-style.css */
+#otcSidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #3B3131;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #otcSidebar a {
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    transition: 1.5s;
+  }
+  
+  #otcSidebar a:hover {
+    background-color: #584e46;
+  }
+  
+  .otc-side-header {
+    margin-left: 30px;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  .otc-dropdown-content {
+    display: none;
+    padding-left: 20px;
+  }
+  
+  .otc-dropdown:hover .otc-dropdown-content {
+    display: block;
+  }
+  
+  .otc-sub-dropdown-content {
+    display: none;
+    padding-left: 20px;
+  }
+  
+  .otc-sub-dropdown:hover .otc-sub-dropdown-content {
+    display: block;
+  }
+  
+/* ---------------------------------------index css------------------------------------*/  
+.wrapper {
+    display: flex;
+  } 
+  #sidebar {
+    width: 250px;
+    height: 100%;
+    background-color: #3B3131;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  #content-wrapper {
+    flex: 1;
+    padding: 20px;
+    transition: margin-left 0.5s;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #wrapper {
+      flex-direction: column;
+    }
+  
+    #content-wrapper {
+      margin-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #content-wrapper {
+      padding: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 300px) {
+    #content-wrapper {
+      padding: 5px;
+    }
+  }
+
+/* ---------------------------------------duser css------------------------------------*/  
+.new-admin-dashboard {
+    width: 40%;
+    height: 20%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #0000ff;
+    background-color: #000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .new-total-users-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+
+  .new-user-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .new-user-icon img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+
+  .new-user-info h2 {
+    color: #ff0000;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .new-user-info p {
+    color: #000;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+  }
+
+
+.new-admin-dashboard1 {
+    width: 40%;
+    height: 20%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 5px solid #0000ff;
+    background-color: #000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .new-total-users-box1 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+
+  .new-user-icon1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+  }
+
+  .new-user-icon1 img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+  }
+
+  .new-user-info1 h2 {
+    color: #ff0000;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .new-user-info1 p {
+    color: #000;
+    font-size: 30px;
+    margin: 0;
+    font-weight: 600;
+  }
+/* ---------------------------------------about css------------------------------------*/  
+.about-admin-main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10%;
+  }
+  
+  .about-container {
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px #dc3545;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+  }
+  
+  .about-form {
+    width: 100%; /* Full width within the container */
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .about-form label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .about-form input[type="text"],
+  .about-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  .about-form input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .about-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+/* ---------------------------------------awallpaper css------------------------------------*/  
+.wallpaper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; Adjust as needed */
+    margin-top:10%;
+  }
+
+  .wallpaper-form {
+    max-width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 50px #dc3545;
+  }
+
+  .wallpaper-form h1 {
+    color: #dc3545;
+    text-align: center;
+  }
+
+  .wallpaper-form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+
+  .wallpaper-form input[type="file"] {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .wallpaper-form .btn {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .wallpaper-form .btn:hover {
+    background-color: #c82333;
+  }
+/* ---------------------------------------videos css------------------------------------*/
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust as needed */
+  margin-top:10%;
+}
+.video-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+}
+.video-form h1 {
+  color: #dc3545;
+  text-align: center;
+}
+.video-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.video-form input[type="text"],
+.video-form input[type="file"],
+.video-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.video-form .btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+.video-form .btn:hover {
+  background-color: #c82333;
+}
+
+.video-form .input {
+  margin-bottom: 15px;
+}
+
+/* ---------------------------------------Quotes css------------------------------------*/
+/* quotes-style.css */
+
+.quotes-admin-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.quotes-container {
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+}
+
+.quotes-form {
+  width: 100%; /* Full width within the container */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.quotes-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.quotes-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.quotes-form input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quotes-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+
+/* ---------------------------------------ae_chest.php css------------------------------------*/
+.equipment-chest-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.equipment-container {
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #007bff; /* You can change the color code for a different shadow color */
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+}
+
+.equipment-form {
+  width: 100%; /* Full width within the container */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.equipment-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+.equipment-form input[type="text"],
+  .equipment-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+  }
+  
+  .equipment-form input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .equipment-form input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+/* ---------------------------------------ae_bicep.php css------------------------------------*/
+.equipment-bicep-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+/* ---------------------------------------ae_last.php css------------------------------------*/
+.equipment-last-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+/* ---------------------------------------ae_shoulder.php css------------------------------------*/
+.equipment-shoulder-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+/* ---------------------------------------ae_sixpack css------------------------------------*/
+.equipment-sixpack-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+/* ---------------------------------------ae_squts css------------------------------------*/
+.equipment-squats-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+/* ---------------------------------------ae_triceps css------------------------------------*/
+.equipment-triceps-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+/* ---------------------------------------aex_chest css------------------------------------*/
+.exercisechest-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust as needed */
+  margin-top: 10%;
+}
+
+.exercisechest-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+}
+
+.exercisechest-form h1 {
+  color: #dc3545;
+  text-align: center;
+}
+
+.exercisechest-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.exercisechest-form input[type="text"],
+.exercisechest-form input[type="file"],
+.exercisechest-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.exercisechest-form .btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.exercisechest-form .btn:hover {
+  background-color: #c82333;
+}
+
+.exercisechest-form .input {
+  margin-bottom: 15px;
+}
+/* ---------------------------------------aex_shoulder css------------------------------------*/
+.exerciseshoulder-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust as needed */
+  margin-top: 10%;
+}
+
+.exerciseshoulder-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+}
+
+.exerciseshoulder-form h1 {
+  color: #dc3545;
+  text-align: center;
+}
+
+.exerciseshoulder-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.exerciseshoulder-form input[type="text"],
+.exerciseshoulder-form textarea,
+.exerciseshoulder-form input[type="file"],
+.exerciseshoulder-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.exerciseshoulder-form .btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.exerciseshoulder-form .btn:hover {
+  background-color: #c82333;
+}
+
+.exerciseshoulder-form .input {
+  margin-bottom: 15px;
+}
+/* ---------------------------------------aex_last css------------------------------------*/
+.exerciselast-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust as needed */
+  margin-top: 10%;
+}
+
+.exerciselast-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+}
+
+.exerciselast-form h1 {
+  color: #dc3545;
+  text-align: center;
+}
+
+.exerciselast-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.exerciselast-form input[type="text"],
+.exerciselast-form textarea,
+.exerciselast-form input[type="file"],
+.exerciselast-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.exerciselast-form .btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.exerciselast-form .btn:hover {
+  background-color: #c82333;
+}
+
+.exerciselast-form .input {
+  margin-bottom: 15px;
+}
+/* ---------------------------------------aex_triceps css------------------------------------*/
+.exercisetricep-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust as needed */
+  margin-top: 10%;
+}
+
+.exercisetricep-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+}
+
+.exercisetricep-form h1 {
+  color: #dc3545;
+  text-align: center;
+}
+
+.exercisetricep-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.exercisetricep-form input[type="text"],
+.exercisetricep-form textarea,
+.exercisetricep-form input[type="file"],
+.exercisetricep-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.exercisetricep-form .btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.exercisetricep-form .btn:hover {
+  background-color: #c82333;
+}
+
+.exercisetricep-form .input {
+  margin-bottom: 15px;
+}
+
+/* ---------------------------------------aex_biceps css------------------------------------*/
+.exercisebiceps-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust as needed */
+  margin-top: 10%;
+}
+
+.exercisebiceps-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+}
+
+.exercisebiceps-form h1 {
+  color: #dc3545;
+  text-align: center;
+}
+
+.exercisebiceps-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.exercisebiceps-form input[type="text"],
+.exercisebiceps-form textarea,
+.exercisebiceps-form input[type="file"],
+.exercisebiceps-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.exercisebiceps-form .btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.exercisebiceps-form .btn:hover {
+  background-color: #c82333;
+}
+
+.exercisebiceps-form .input {
+  margin-bottom: 15px;
+}
+
+/* ---------------------------------------aex_squast css------------------------------------*/
+.exercisesquats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust as needed */
+  margin-top: 10%;
+}
+
+.exercisesquats-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+}
+
+.exercisesquats-form h1 {
+  color: #dc3545;
+  text-align: center;
+}
+
+.exercisesquats-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.exercisesquats-form input[type="text"],
+.exercisesquats-form textarea,
+.exercisesquats-form input[type="file"],
+.exercisesquats-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.exercisesquats-form .btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.exercisesquats-form .btn:hover {
+  background-color: #c82333;
+}
+
+.exercisesquats-form .input {
+  margin-bottom: 15px;
+}
+/* ---------------------------------------aex_sixpackabs css------------------------------------*/
+.exercisesixpackabs-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; Adjust as needed */
+  margin-top: 10%;
+}
+
+.exercisesixpackabs-form {
+  max-width: 400px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+}
+
+.exercisesixpackabs-form h1 {
+  color: #dc3545;
+  text-align: center;
+}
+
+.exercisesixpackabs-form form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.exercisesixpackabs-form input[type="text"],
+.exercisesixpackabs-form textarea,
+.exercisesixpackabs-form input[type="file"],
+.exercisesixpackabs-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.exercisesixpackabs-form .btn {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.exercisesixpackabs-form .btn:hover {
+  background-color: #c82333;
+}
+
+.exercisesixpackabs-form .input {
+  margin-bottom: 15px;
+}
+
+/* ---------------------------------------beastmodediet css------------------------------------*/
+/* Add these styles to your existing CSS file */
+.beast-mode-diet-admin-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.beast-mode-diet-container {
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+}
+
+.beast-mode-diet-form {
+  width: 100%; /* Full width within the container */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.beast-mode-diet-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.beast-mode-diet-form input[type="text"],
+.beast-mode-diet-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.beast-mode-diet-form input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.beast-mode-diet-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+/* ---------------------------------------leanmodediet css------------------------------------*/
+.lean-diet-mode-admin-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.lean-diet-mode-container {
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #007bff; /* Adjust box-shadow color for Lean Diet Mode */
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+}
+
+.lean-diet-mode-form {
+  width: 100%; /* Full width within the container */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.lean-diet-mode-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.lean-diet-mode-form input[type="text"],
+.lean-diet-mode-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.lean-diet-mode-form input[type="submit"] {
+  background-color: #007bff; /* Adjust background color for Lean Diet Mode */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.lean-diet-mode-form input[type="submit"]:hover {
+  background-color: #0056b3; /* Adjust hover background color for Lean Diet Mode */
+}
+
+/* ---------------------------------------sixpackmodediet css------------------------------------*/
+.six-pack-diet-admin-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.six-pack-diet-container {
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #28a745; /* Adjust box-shadow color for Six Pack Diet */
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+}
+
+.six-pack-diet-form {
+  width: 100%; /* Full width within the container */
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.six-pack-diet-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.six-pack-diet-form input[type="text"],
+.six-pack-diet-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.six-pack-diet-form input[type="submit"] {
+  background-color: #28a745; /* Adjust background color for Six Pack Diet */
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.six-pack-diet-form input[type="submit"]:hover {
+  background-color: #218838; /* Adjust hover background color for Six Pack Diet */
+}
+
+
+
+/* ---------------------------------------allmangeinfo css------------------------------------*/
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.custom-table {
+  width: 60%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.custom-table th, .custom-table td {
+  border: 3px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  color: #fff;
+}
+.custom-table th {
+  background-color: #ff0000;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+.custom-table .action-links {
+  white-space: nowrap;
+}
+.custom-table .action-links a {
+  background-color: #ff0000;
+  padding: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-right: 10px;
+  font-weight: bold;
+}
+/* ---------------------------------------allupdatefrom css------------------------------------*/
+.update-form-main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+.update-form-container {
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 50px #dc3545;
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+}
+.update-form {
+  width: 100%; /* Full width within the container */
+  max-width: 400px;
+  margin: 0 auto;
+}
+.update-form label {
+  display: block;
+  margin-bottom: 8px;
+}
+.update-form input[type="text"],
+.update-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+.update-form input[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.update-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
